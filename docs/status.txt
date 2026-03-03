@@ -1,0 +1,5 @@
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
