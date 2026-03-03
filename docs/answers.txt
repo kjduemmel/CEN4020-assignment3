@@ -1,0 +1,129 @@
+1:
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git add .
+
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   docs/status.txt
+
+
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git commit -m "Create docs folder with status.txt"
+[master 39ae71a] Create docs folder with status.txt
+ 1 file changed, 5 insertions(+)
+ create mode 100644 docs/status.txt
+
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 526 bytes | 526.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:kjduemmel/CEN4020-assignment3.git
+   5e87506..39ae71a  master -> master
+
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+2:
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git rev-list --all --count
+9
+
+3:
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git log -1 --format="%ad" --date=iso -- README.md
+2026-03-03 15:45:23 -0600
+
+4:
+To work on a bug/feature without breaking the main/master branch.
+To accomodate easy parallel work by many developers without merge conflicts.
+
+5:
+Git status shows the working history of the current branch. (un/staged, un/tracked)
+Git log shows the commit history with optional data pruning.
+
+6:
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git log -- Vehicle.h
+commit 03106e92a1e36708334c69dd071088c6d0937b1d
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+    -> Declared the trivial destructors for all classes
+    -> Fully formatted toString methods for all classes
+    -> Added test cases in the main method for testing the implementations
+    -> Added validation on value for engine sizes in the  Car class
+
+commit f9cd890b3f89fbe5920a1fdf7da34ee915ba27b9
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:42:39 2019 -0400
+
+    -> Partial implementation of PoweredVehicle and Car
+    -> Definition of virtual functions
+
+commit f9c24b027e6275ff6a1911241014c44971b4e8d0
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:04:36 2019 -0400
+
+    Refactored Vehicle class to separate definition and declarations
+    Added mileageEstimate abstract method to Vehicle
+    Implemented the Bicycle class
+
+commit 4f6c88c953f4601929df7980a19dcdaee4f13854
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 14:59:19 2019 -0400
+
+    Base Vehicle class created
+
+7:
+C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git log --grep="file"
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+8:
+Inheritance is a class can reuse and extend another class by inheriting its fields/methods
+Polymorphism is one function/method being defined again to behave differently with a different object type.
+Encapsulation is bundling data and methods together in a class and controlling access to the internal state with "private" etc..
+
+9:
+In Dictator and Lieutenants, there’s a single “dictator” (project lead) who makes the final merge decisions, and lieutenants each manage a subsystem, collect changes from contributors, and forward curated sets of commits up to the dictator.
+
+In an Integration Manager workflow, the key role is a separate integration manager who pulls and merges contributions (often from many developers’ public branches/forks) into the mainline. It’s less about a hierarchy of subsystem lieutenants and more about one person/team responsible for integrating everyone’s work.
+
+10:
+With 100 developers, Dictator and Lieutenants scales better than Centralized because:
+
+Work is merged first within subsystems by lieutenants, so the mainline isn’t constantly hit by 100 simultaneous changes.
+
+Lieutenants review and curate changes for their area, so code review and decision-making isn’t a single bottleneck.
+
+Each subsystem has a responsible maintainer who understands that code deeply and can keep it consistent.
+
+Only vetted, tested sets of changes move upward, reducing “everyone pushes to main” breakages.
+
+The dictator handles big-picture integration decisions, while lieutenants handle the details—so the lead isn’t overwhelmed by every small change, having decisions be faster to make.
