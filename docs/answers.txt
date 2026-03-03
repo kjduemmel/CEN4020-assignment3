@@ -1,3 +1,11 @@
+https://learngitbranching.js.org on 3/2
+https://git-school.github.io/visualizing-git/#free on 3/3
+https://www.w3schools.com/git/ on 3/3 (i might have done this before, i am not sure)
+
+I set up my account in september of 2025.
+
+
+
 1:
 C:\Users\KJD3000\QAL Dropbox\Keagan Duemmel\FloridaVirtualSchool\03-College\FSU\CurrentClasses\CEN4020\CEN4020-assignment3>git status
 On branch master
